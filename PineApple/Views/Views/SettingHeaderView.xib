@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SofiaProSemiBold.ttf">
+            <string>SofiaProSemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SettingHeaderView" customModule="PineApple" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uz-8l-cgf">
+                    <rect key="frame" x="16" y="2" width="382" height="1"/>
+                    <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="W7f-gF-Bma"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rt-V0-T03">
+                    <rect key="frame" x="16" y="35" width="46" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="n73-XC-jv1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SofiaProSemiBold" family="Sofia Pro" pointSize="18"/>
+                    <color key="textColor" red="0.31372549019607843" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1uz-8l-cgf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="EAf-lC-ojj"/>
+                <constraint firstItem="0rt-V0-T03" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="YT1-8s-etG"/>
+                <constraint firstAttribute="bottom" secondItem="0rt-V0-T03" secondAttribute="bottom" id="gui-G7-AyX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1uz-8l-cgf" secondAttribute="trailing" constant="16" id="iqD-Jq-Z3g"/>
+                <constraint firstItem="0rt-V0-T03" firstAttribute="top" secondItem="1uz-8l-cgf" secondAttribute="bottom" constant="32" id="mZw-TI-nPe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="separateView" destination="1uz-8l-cgf" id="T8B-uW-jde"/>
+                <outlet property="titleLabel" destination="0rt-V0-T03" id="5QG-cd-H2b"/>
+                <outlet property="titleLabelBottom" destination="gui-G7-AyX" id="w6e-zu-agw"/>
+                <outlet property="titleLabelTop" destination="mZw-TI-nPe" id="tId-64-Xg8"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="105"/>
+        </view>
+    </objects>
+</document>

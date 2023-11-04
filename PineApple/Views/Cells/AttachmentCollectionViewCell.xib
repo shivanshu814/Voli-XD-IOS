@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AttachmentCollectionViewCell" id="ZvS-z6-Cpg" customClass="AttachmentCollectionViewCell" customModule="PineApple" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xed-gT-3y6">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SbI-Do-rky">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SbI-Do-rky" firstAttribute="top" secondItem="Xed-gT-3y6" secondAttribute="top" id="8kM-ax-mq0"/>
+                            <constraint firstAttribute="bottom" secondItem="SbI-Do-rky" secondAttribute="bottom" id="9Eu-SQ-Sso"/>
+                            <constraint firstAttribute="trailing" secondItem="SbI-Do-rky" secondAttribute="trailing" id="Gch-xn-nVy"/>
+                            <constraint firstAttribute="height" constant="130" id="YzC-Wq-ewT"/>
+                            <constraint firstItem="SbI-Do-rky" firstAttribute="leading" secondItem="Xed-gT-3y6" secondAttribute="leading" id="lPI-ap-pEi"/>
+                            <constraint firstAttribute="width" constant="130" id="xQn-5Y-Hkh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="-1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.59999999999999998"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Xed-gT-3y6" firstAttribute="leading" secondItem="ZvS-z6-Cpg" secondAttribute="leading" id="UON-bx-Pot"/>
+                <constraint firstAttribute="trailing" secondItem="Xed-gT-3y6" secondAttribute="trailing" id="cNR-qb-z47"/>
+                <constraint firstItem="Xed-gT-3y6" firstAttribute="top" secondItem="ZvS-z6-Cpg" secondAttribute="top" id="loV-vV-Gp4"/>
+                <constraint firstAttribute="bottom" secondItem="Xed-gT-3y6" secondAttribute="bottom" id="ppq-yF-hlS"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                    <size key="value" width="1" height="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="2"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="attachmentBaseView" destination="Xed-gT-3y6" id="nND-2d-Hmb"/>
+                <outlet property="attachmentImageView" destination="SbI-Do-rky" id="zJa-PA-4NJ"/>
+            </connections>
+            <point key="canvasLocation" x="533" y="153"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SofiaProBold.ttf">
+            <string>SofiaProBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ItineraryTableViewCell" rowHeight="346" id="0Im-4o-ydF" customClass="ItineraryTableViewCell" customModule="PineApple" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="346"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Im-4o-ydF" id="M1K-Jz-zgw">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="346"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6W0-zW-ajE">
+                        <rect key="frame" x="0.0" y="10" width="375" height="328"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="-2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.31372549020000001" green="0.30980392159999998" blue="0.30980392159999998" alpha="0.11" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ViW-yD-v02">
+                        <rect key="frame" x="0.0" y="8" width="375" height="330"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6EG-2w-ceg">
+                                <rect key="frame" x="16" y="214" width="289" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqg-yv-Z2R">
+                                        <rect key="frame" x="0.0" y="0.0" width="289" height="41"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="11:14 am   •   14/09/19">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="13" name="SofiaProLight"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Lld-ef-b36">
+                                        <rect key="frame" x="0.0" y="49" width="289" height="15"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="aFZ-8u-tZb"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="24" minimumInteritemSpacing="24" id="2iu-x2-tt1">
+                                            <size key="itemSize" width="29" height="15"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJF-Pv-gWi">
+                                <rect key="frame" x="16" y="16" width="343" height="15"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="kjkfjdklfjkdjfkdsfjdffd dfsdp">
+                                        <attributes>
+                                            <color key="NSColor" red="0.31372549019607843" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="15" name="SofiaProSemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sNe-dB-Xm3">
+                                <rect key="frame" x="0.0" y="47" width="375" height="151"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="gzn-YR-XBv"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="16" minimumInteritemSpacing="7" id="Tpf-1j-ppI">
+                                    <size key="itemSize" width="151" height="151"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="fxb-T7-quc">
+                                <rect key="frame" x="10" y="286" width="165" height="36"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofm-lK-5tL">
+                                        <rect key="frame" x="0.0" y="0.0" width="43" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvG-8G-QUm">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="Igj-oR-fWW"/>
+                                                    <constraint firstAttribute="height" constant="36" id="SA7-40-iYL"/>
+                                                </constraints>
+                                                <state key="normal" image="icon-like"/>
+                                                <state key="selected" image="icon-liked"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krv-aA-coa">
+                                                <rect key="frame" x="36" y="0.0" width="7" height="36"/>
+                                                <fontDescription key="fontDescription" name="SofiaProBold" family="Sofia Pro" pointSize="11"/>
+                                                <color key="textColor" red="0.5607843137254902" green="0.5607843137254902" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3b-ny-TCb">
+                                        <rect key="frame" x="61" y="0.0" width="43" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CL1-kd-Hod">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="77b-FK-Ieb"/>
+                                                    <constraint firstAttribute="width" constant="36" id="bJ0-5O-BWz"/>
+                                                </constraints>
+                                                <state key="normal" image="icon-comment"/>
+                                                <state key="selected" image="icon-commented"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bj4-cA-td9">
+                                                <rect key="frame" x="36" y="0.0" width="7" height="36"/>
+                                                <fontDescription key="fontDescription" name="SofiaProBold" family="Sofia Pro" pointSize="11"/>
+                                                <color key="textColor" red="0.5607843137254902" green="0.5607843137254902" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIn-0x-Bbp">
+                                        <rect key="frame" x="122" y="0.0" width="43" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrR-R2-L3p">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="X6J-5Y-m33"/>
+                                                    <constraint firstAttribute="height" constant="36" id="eD2-rX-V7G"/>
+                                                </constraints>
+                                                <state key="normal" image="icon-save-small"/>
+                                                <state key="selected" image="icon-saved-small"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auN-hG-56d">
+                                                <rect key="frame" x="36" y="0.0" width="7" height="36"/>
+                                                <fontDescription key="fontDescription" name="SofiaProBold" family="Sofia Pro" pointSize="11"/>
+                                                <color key="textColor" red="0.5607843137254902" green="0.5607843137254902" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="yhu-hX-SqZ"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g8W-1v-0gA">
+                                <rect key="frame" x="321" y="244.5" width="38" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Gl5-3W-Xp6"/>
+                                    <constraint firstAttribute="width" constant="38" id="bfu-uV-vU2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="19"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="30 JUN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Xk-xc-w6H">
+                                <rect key="frame" x="323" y="298.5" width="34" height="11"/>
+                                <fontDescription key="fontDescription" name="SofiaProBold" family="Sofia Pro" pointSize="11"/>
+                                <color key="textColor" red="0.5607843137254902" green="0.5607843137254902" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Xk-xc-w6H" firstAttribute="top" secondItem="g8W-1v-0gA" secondAttribute="bottom" constant="16" id="80f-4p-czh"/>
+                            <constraint firstAttribute="trailing" secondItem="sNe-dB-Xm3" secondAttribute="trailing" id="AVS-Ga-mc6"/>
+                            <constraint firstItem="g8W-1v-0gA" firstAttribute="leading" secondItem="6EG-2w-ceg" secondAttribute="trailing" constant="16" id="BeH-yG-dfJ"/>
+                            <constraint firstItem="0Xk-xc-w6H" firstAttribute="centerX" secondItem="g8W-1v-0gA" secondAttribute="centerX" id="KG8-GP-v6c"/>
+                            <constraint firstAttribute="trailing" secondItem="g8W-1v-0gA" secondAttribute="trailing" constant="16" id="OWv-hO-cPl"/>
+                            <constraint firstItem="KJF-Pv-gWi" firstAttribute="leading" secondItem="ViW-yD-v02" secondAttribute="leading" constant="16" id="Of3-FD-p3b"/>
+                            <constraint firstItem="fxb-T7-quc" firstAttribute="leading" secondItem="ViW-yD-v02" secondAttribute="leading" constant="10" id="UzD-MD-riR"/>
+                            <constraint firstItem="6EG-2w-ceg" firstAttribute="top" secondItem="sNe-dB-Xm3" secondAttribute="bottom" constant="16" id="VKE-Ia-Riz"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fxb-T7-quc" secondAttribute="trailing" id="gCM-Rv-vfm"/>
+                            <constraint firstItem="KJF-Pv-gWi" firstAttribute="top" secondItem="ViW-yD-v02" secondAttribute="top" constant="16" id="ie6-OG-UjB"/>
+                            <constraint firstItem="sNe-dB-Xm3" firstAttribute="leading" secondItem="ViW-yD-v02" secondAttribute="leading" id="nNt-2B-iHc"/>
+                            <constraint firstItem="6EG-2w-ceg" firstAttribute="leading" secondItem="ViW-yD-v02" secondAttribute="leading" constant="16" id="nTL-ac-34o"/>
+                            <constraint firstItem="0Xk-xc-w6H" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fxb-T7-quc" secondAttribute="trailing" constant="16" id="neI-4e-ABb"/>
+                            <constraint firstAttribute="trailing" secondItem="KJF-Pv-gWi" secondAttribute="trailing" constant="16" id="r4h-GD-0gy"/>
+                            <constraint firstAttribute="bottom" secondItem="fxb-T7-quc" secondAttribute="bottom" constant="8" id="rrn-k6-QkO"/>
+                            <constraint firstItem="sNe-dB-Xm3" firstAttribute="top" secondItem="KJF-Pv-gWi" secondAttribute="bottom" constant="16" id="s9l-o0-6vS"/>
+                            <constraint firstItem="fxb-T7-quc" firstAttribute="top" secondItem="6EG-2w-ceg" secondAttribute="bottom" constant="8" id="uvv-Y1-BGW"/>
+                            <constraint firstItem="0Xk-xc-w6H" firstAttribute="centerY" secondItem="fxb-T7-quc" secondAttribute="centerY" id="vDa-Y5-B02"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.31372549020000001" green="0.30980392159999998" blue="0.30980392159999998" alpha="0.11" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="6W0-zW-ajE" firstAttribute="width" secondItem="ViW-yD-v02" secondAttribute="width" id="273-yj-hKA"/>
+                    <constraint firstAttribute="bottom" secondItem="ViW-yD-v02" secondAttribute="bottom" constant="8" id="5mb-oi-4uc"/>
+                    <constraint firstAttribute="trailing" secondItem="ViW-yD-v02" secondAttribute="trailing" id="5t3-U2-yUF"/>
+                    <constraint firstItem="6W0-zW-ajE" firstAttribute="top" secondItem="ViW-yD-v02" secondAttribute="top" constant="2" id="94h-MX-fG1"/>
+                    <constraint firstItem="6W0-zW-ajE" firstAttribute="leading" secondItem="ViW-yD-v02" secondAttribute="leading" id="Ghx-ST-Q1v"/>
+                    <constraint firstItem="ViW-yD-v02" firstAttribute="top" secondItem="M1K-Jz-zgw" secondAttribute="top" constant="8" id="HYb-3e-6Ka"/>
+                    <constraint firstItem="ViW-yD-v02" firstAttribute="leading" secondItem="M1K-Jz-zgw" secondAttribute="leading" id="hoP-Qf-A3W"/>
+                    <constraint firstItem="6W0-zW-ajE" firstAttribute="height" secondItem="ViW-yD-v02" secondAttribute="height" constant="-2" id="upL-nW-D1C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="attachmentCollectionView" destination="sNe-dB-Xm3" id="zsJ-lD-Dux"/>
+                <outlet property="bookmarkButton" destination="XrR-R2-L3p" id="rW3-bK-rVa"/>
+                <outlet property="bookmarkLabel" destination="auN-hG-56d" id="Pvk-EG-7Qq"/>
+                <outlet property="commentButton" destination="CL1-kd-Hod" id="aQj-XC-5fg"/>
+                <outlet property="commentLabel" destination="bj4-cA-td9" id="fHV-BU-CIh"/>
+                <outlet property="dateLabel" destination="0Xk-xc-w6H" id="JNe-qK-Uzc"/>
+                <outlet property="dateLocationLabel" destination="sqg-yv-Z2R" id="tjG-2D-SRY"/>
+                <outlet property="likeButton" destination="jvG-8G-QUm" id="YCl-0i-1xP"/>
+                <outlet property="likeLabel" destination="Krv-aA-coa" id="Kqa-jp-htk"/>
+                <outlet property="profileImage" destination="g8W-1v-0gA" id="dCK-uf-PTM"/>
+                <outlet property="tagsCollectionView" destination="Lld-ef-b36" id="3AH-Wn-Mhe"/>
+                <outlet property="titleLabel" destination="KJF-Pv-gWi" id="uE2-6D-6at"/>
+            </connections>
+            <point key="canvasLocation" x="80.799999999999997" y="529.83508245877067"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-comment" width="20" height="20"/>
+        <image name="icon-commented" width="21" height="20"/>
+        <image name="icon-like" width="24" height="21"/>
+        <image name="icon-liked" width="23" height="21"/>
+        <image name="icon-save-small" width="17" height="20"/>
+        <image name="icon-saved-small" width="16" height="20"/>
+    </resources>
+</document>

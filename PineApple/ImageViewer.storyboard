@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="07d-s6-cmu">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="yj7-ca-Uj5">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="07d-s6-cmu" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hio-g9-xnU">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2Cc-mR-tXH" kind="relationship" relationship="rootViewController" id="mTB-3h-lmj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lZS-qH-Iex" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3004" y="3566"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="aEI-c7-RH3">
+            <objects>
+                <collectionViewController id="hQd-RH-ApO" customClass="ImageViewController" customModule="PineApple" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" id="nps-X3-Zm9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.2192357513" green="0.2192357513" blue="0.2192357513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="jbc-e2-Ygw">
+                            <size key="itemSize" width="217" height="196"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="item" id="wmK-cM-Vwb" customClass="ScrollingImageCell" customModule="PineApple" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="217" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="217" height="196"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="hQd-RH-ApO" id="3Gj-g1-XSC"/>
+                            <outlet property="delegate" destination="hQd-RH-ApO" id="U7Z-xO-kCh"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="RhA-xi-TyN">
+                        <barButtonItem key="leftBarButtonItem" image="back" style="plain" id="jyg-gD-bIB">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nsl-yt-i54">
+                                <rect key="frame" x="16" y="11" width="9" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="hero_dismissViewController" destination="hQd-RH-ApO" eventType="touchUpInside" id="6Ni-Kl-4Pd"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MN5-mn-7Gd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2039" y="3578"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="l6a-7V-zj2">
+            <objects>
+                <viewController id="2Cc-mR-tXH" customClass="ImageViewController" customModule="PineApple" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="taX-cZ-WBA"/>
+                        <viewControllerLayoutGuide type="bottom" id="SP9-mi-40B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7YU-QI-uuS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uy1-ju-77c">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Uaa-Vq-DAf">
+                                    <size key="itemSize" width="375" height="517"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="item" id="QCe-lF-I31" customClass="ScrollingImageCell" customModule="PineApple" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="108.66666666666667" width="375" height="517"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="517"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="2Cc-mR-tXH" id="5CG-jp-mmS"/>
+                                    <outlet property="delegate" destination="2Cc-mR-tXH" id="0kZ-Vy-EJ4"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nho-VY-f7u">
+                                <rect key="frame" x="10" y="39" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="MDA-3b-jn5"/>
+                                    <constraint firstAttribute="height" constant="40" id="mwb-1D-Ze2"/>
+                                </constraints>
+                                <state key="normal" image="closeButton"/>
+                                <connections>
+                                    <action selector="hero_dismissViewController" destination="2Cc-mR-tXH" eventType="touchUpInside" id="Ink-1r-wvW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uy1-ju-77c" secondAttribute="trailing" id="0DO-GC-G7V"/>
+                            <constraint firstItem="uy1-ju-77c" firstAttribute="leading" secondItem="7YU-QI-uuS" secondAttribute="leading" id="Kxj-a8-fp5"/>
+                            <constraint firstItem="SP9-mi-40B" firstAttribute="top" secondItem="uy1-ju-77c" secondAttribute="bottom" id="MQ4-II-m6N"/>
+                            <constraint firstItem="Nho-VY-f7u" firstAttribute="top" secondItem="7YU-QI-uuS" secondAttribute="top" constant="39" id="TWq-nu-dpb"/>
+                            <constraint firstItem="uy1-ju-77c" firstAttribute="top" secondItem="7YU-QI-uuS" secondAttribute="top" id="c0j-am-hTB"/>
+                            <constraint firstItem="Nho-VY-f7u" firstAttribute="leading" secondItem="7YU-QI-uuS" secondAttribute="leading" constant="10" id="mCg-zV-gkR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UIP-be-ax6"/>
+                    <connections>
+                        <outlet property="backButton" destination="Nho-VY-f7u" id="geg-TC-F2e"/>
+                        <outlet property="collectionView" destination="uy1-ju-77c" id="4MP-kc-WB2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BLi-kz-hSz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1258.4000000000001" y="3565.3673163418293"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="9" height="16"/>
+        <image name="closeButton" width="14" height="14"/>
+    </resources>
+</document>

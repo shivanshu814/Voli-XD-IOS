@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SofiaProBold.ttf">
+            <string>SofiaProBold</string>
+        </array>
+        <array key="SofiaProRegular.ttf">
+            <string>SofiaProRegular</string>
+        </array>
+        <array key="SofiaProSemiBold.ttf">
+            <string>SofiaProSemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view hidden="YES" contentMode="scaleToFill" id="UhO-Yq-Khs" customClass="TableFooterView" customModule="PineApple" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAc-HA-KKY">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnR-wG-XIp">
+                            <rect key="frame" x="146.5" y="24" width="121" height="32"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="Dq5-ao-eD1"/>
+                                <constraint firstAttribute="width" constant="121" id="vVQ-5f-zUv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="15"/>
+                            <state key="normal" title="Load more">
+                                <color key="titleColor" red="0.51764705882352935" green="0.21568627450980393" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.51764705882352935" green="0.21568627450980393" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ExK-Qh-zyL">
+                            <rect key="frame" x="197" y="30" width="20" height="20"/>
+                            <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No more result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDB-2Z-zf4">
+                            <rect key="frame" x="156.5" y="32.5" width="101" height="15"/>
+                            <fontDescription key="fontDescription" name="SofiaProBold" family="Sofia Pro" pointSize="15"/>
+                            <color key="textColor" red="0.31372549019607843" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXR-uh-P3E">
+                            <rect key="frame" x="0.0" y="88" width="414" height="1"/>
+                            <color key="backgroundColor" red="0.81176470588235294" green="0.76078431372549016" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="gxP-V1-yyi"/>
+                            </constraints>
+                        </view>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mIl-8f-3Fp">
+                            <rect key="frame" x="16" y="156" width="382" height="77"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="77" id="TF4-Lj-zSZ"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7Fb-QI-WiG" customClass="LeftAlignedCollectionViewFlowLayout" customModule="PineApple" customModuleProvider="target">
+                                <size key="itemSize" width="50" height="30"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <cells/>
+                        </collectionView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zs9-Ql-slJ">
+                            <rect key="frame" x="16" y="121" width="96.5" height="19"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="19" id="hlJ-nB-Fb8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SofiaProSemiBold" family="Sofia Pro" pointSize="15"/>
+                            <color key="textColor" red="0.31372549020000001" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgL-N1-GNX">
+                            <rect key="frame" x="318" y="121" width="80" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="XJK-Fg-HiL"/>
+                                <constraint firstAttribute="width" constant="80" id="yUc-Az-vAa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SofiaProBold" family="Sofia Pro" pointSize="11"/>
+                            <state key="normal" title="SEE ALL">
+                                <color key="titleColor" red="0.5607843137254902" green="0.5607843137254902" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="mIl-8f-3Fp" firstAttribute="top" secondItem="zs9-Ql-slJ" secondAttribute="bottom" constant="16" id="8z0-ZB-Lxi"/>
+                        <constraint firstItem="zs9-Ql-slJ" firstAttribute="top" secondItem="SXR-uh-P3E" secondAttribute="bottom" constant="32" id="CRb-w4-apP"/>
+                        <constraint firstItem="dDB-2Z-zf4" firstAttribute="centerY" secondItem="rnR-wG-XIp" secondAttribute="centerY" id="Of3-6C-y1x"/>
+                        <constraint firstItem="rnR-wG-XIp" firstAttribute="centerX" secondItem="xAc-HA-KKY" secondAttribute="centerX" id="PPQ-f8-25G"/>
+                        <constraint firstAttribute="trailing" secondItem="SXR-uh-P3E" secondAttribute="trailing" id="Wtc-Fv-mrh"/>
+                        <constraint firstItem="rnR-wG-XIp" firstAttribute="top" secondItem="xAc-HA-KKY" secondAttribute="top" constant="24" id="Yw3-Hi-9L8"/>
+                        <constraint firstItem="ExK-Qh-zyL" firstAttribute="centerX" secondItem="rnR-wG-XIp" secondAttribute="centerX" id="ZaI-ZZ-epx"/>
+                        <constraint firstItem="mIl-8f-3Fp" firstAttribute="leading" secondItem="xAc-HA-KKY" secondAttribute="leading" constant="16" id="bKm-xB-8ae"/>
+                        <constraint firstItem="ExK-Qh-zyL" firstAttribute="centerY" secondItem="rnR-wG-XIp" secondAttribute="centerY" id="cfk-1V-a9B"/>
+                        <constraint firstAttribute="trailing" secondItem="QgL-N1-GNX" secondAttribute="trailing" constant="16" id="erw-3O-36C"/>
+                        <constraint firstItem="QgL-N1-GNX" firstAttribute="top" secondItem="zs9-Ql-slJ" secondAttribute="top" id="fDK-Lj-rsx"/>
+                        <constraint firstAttribute="trailing" secondItem="mIl-8f-3Fp" secondAttribute="trailing" constant="16" id="gpK-WF-wsW"/>
+                        <constraint firstItem="SXR-uh-P3E" firstAttribute="top" secondItem="rnR-wG-XIp" secondAttribute="bottom" constant="32" id="ly1-pg-GVO"/>
+                        <constraint firstItem="SXR-uh-P3E" firstAttribute="leading" secondItem="xAc-HA-KKY" secondAttribute="leading" id="qxx-xn-Gpk"/>
+                        <constraint firstItem="dDB-2Z-zf4" firstAttribute="centerX" secondItem="rnR-wG-XIp" secondAttribute="centerX" id="scq-yQ-D2c"/>
+                        <constraint firstItem="zs9-Ql-slJ" firstAttribute="leading" secondItem="xAc-HA-KKY" secondAttribute="leading" constant="16" id="toC-az-QKJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xAc-HA-KKY" firstAttribute="top" secondItem="UhO-Yq-Khs" secondAttribute="top" id="8cy-J5-uep"/>
+                <constraint firstItem="xAc-HA-KKY" firstAttribute="leading" secondItem="UhO-Yq-Khs" secondAttribute="leading" id="Xnt-Ml-09b"/>
+                <constraint firstItem="N3S-g5-KDQ" firstAttribute="bottom" secondItem="xAc-HA-KKY" secondAttribute="bottom" id="b5h-P2-Urx"/>
+                <constraint firstAttribute="trailing" secondItem="xAc-HA-KKY" secondAttribute="trailing" id="mXV-YQ-9WP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="N3S-g5-KDQ"/>
+            <connections>
+                <outlet property="activityIndicatorView" destination="ExK-Qh-zyL" id="bbg-g6-H3t"/>
+                <outlet property="collectionView" destination="mIl-8f-3Fp" id="LGl-If-lAZ"/>
+                <outlet property="collectionViewHeight" destination="TF4-Lj-zSZ" id="Y3b-Jn-ALQ"/>
+                <outlet property="loadMoreButton" destination="rnR-wG-XIp" id="loC-Ep-4rQ"/>
+                <outlet property="loadMoreButtonTop" destination="Yw3-Hi-9L8" id="F5B-ZJ-uLC"/>
+                <outlet property="noMoreResultLabel" destination="dDB-2Z-zf4" id="fiL-dA-AM2"/>
+                <outlet property="seeAllButton" destination="QgL-N1-GNX" id="S5P-Ig-7be"/>
+                <outlet property="seperateView" destination="SXR-uh-P3E" id="fbL-pr-cC8"/>
+                <outlet property="titleLabel" destination="zs9-Ql-slJ" id="AiP-Dq-yaD"/>
+            </connections>
+            <point key="canvasLocation" x="838" y="88"/>
+        </view>
+    </objects>
+</document>

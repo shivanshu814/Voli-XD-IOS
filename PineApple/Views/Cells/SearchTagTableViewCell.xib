@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SofiaProBold.ttf">
+            <string>SofiaProBold</string>
+        </array>
+        <array key="SofiaProSemiBold.ttf">
+            <string>SofiaProSemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SearchTagTableViewCell" id="0Hc-rQ-I81" customClass="SearchTagTableViewCell" customModule="PineApple" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Hc-rQ-I81" id="mSP-4B-JTw">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m8f-PM-Pwp">
+                        <rect key="frame" x="16" y="0.0" width="382" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jB-Eo-MgM">
+                                <rect key="frame" x="0.0" y="0.0" width="382" height="25"/>
+                                <fontDescription key="fontDescription" name="SofiaProSemiBold" family="Sofia Pro" pointSize="18"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqV-2Q-LLZ">
+                                <rect key="frame" x="0.0" y="25" width="382" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="1hH-xP-es4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SofiaProBold" family="Sofia Pro" pointSize="11"/>
+                                <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81q-Cx-OnP">
+                        <rect key="frame" x="0.0" y="69" width="414" height="1"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="nZS-1l-VsB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="81q-Cx-OnP" firstAttribute="leading" secondItem="mSP-4B-JTw" secondAttribute="leading" id="Ax3-9x-6Gh"/>
+                    <constraint firstItem="m8f-PM-Pwp" firstAttribute="leading" secondItem="mSP-4B-JTw" secondAttribute="leading" constant="16" id="Cz9-qa-mpy"/>
+                    <constraint firstItem="m8f-PM-Pwp" firstAttribute="top" secondItem="mSP-4B-JTw" secondAttribute="top" id="Ky1-0Z-uPF"/>
+                    <constraint firstAttribute="bottom" secondItem="81q-Cx-OnP" secondAttribute="bottom" id="Qtq-N1-MkB"/>
+                    <constraint firstAttribute="trailing" secondItem="m8f-PM-Pwp" secondAttribute="trailing" constant="16" id="ib7-ug-4Mv"/>
+                    <constraint firstAttribute="trailing" secondItem="81q-Cx-OnP" secondAttribute="trailing" id="s9F-lg-zbb"/>
+                    <constraint firstItem="81q-Cx-OnP" firstAttribute="top" secondItem="m8f-PM-Pwp" secondAttribute="bottom" constant="24" id="zrC-Bt-uc8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countLabel" destination="xqV-2Q-LLZ" id="5kq-fx-XPm"/>
+                <outlet property="tagLabel" destination="6jB-Eo-MgM" id="UxC-WZ-6Cs"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="98"/>
+        </tableViewCell>
+    </objects>
+</document>

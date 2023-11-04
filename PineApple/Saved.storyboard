@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EuW-gj-cGk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SofiaProSemiBold.ttf">
+            <string>SofiaProSemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="P8A-Ro-7fO">
+            <objects>
+                <navigationController id="0bD-8e-Yre" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8Ir-Xu-aNk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EuW-gj-cGk" kind="relationship" relationship="rootViewController" id="nwg-g4-FM8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nFq-mR-dLr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1009" y="-117"/>
+        </scene>
+        <!--Saved View Controller-->
+        <scene sceneID="Js9-0Y-aXZ">
+            <objects>
+                <viewController id="EuW-gj-cGk" customClass="SavedViewController" customModule="PineApple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ES3-gg-b2p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgC-Yj-xoG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="804"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="4Y4-lM-47P">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="47"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="3jI-t8-aR3">
+                                            <rect key="frame" x="16" y="25" width="382" height="22"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved collections" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBp-47-xv0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="144" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="CS6-lt-7pW"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="SofiaProSemiBold" family="Sofia Pro" pointSize="18"/>
+                                                    <color key="textColor" red="0.31372549019607843" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="twG-ji-HYM"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="3jI-t8-aR3" secondAttribute="bottom" id="8ao-87-dnM"/>
+                                        <constraint firstAttribute="trailing" secondItem="3jI-t8-aR3" secondAttribute="trailing" constant="16" id="Q4v-ta-smU"/>
+                                        <constraint firstItem="3jI-t8-aR3" firstAttribute="leading" secondItem="4Y4-lM-47P" secondAttribute="leading" constant="16" id="aSz-Vq-21d"/>
+                                        <constraint firstItem="3jI-t8-aR3" firstAttribute="top" secondItem="4Y4-lM-47P" secondAttribute="top" constant="25" id="jrd-Ab-Kmj"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="KF5-oI-J6d">
+                                <rect key="frame" x="16" y="159" width="382" height="88"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't saved any itinerary yet." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErG-I5-5lv">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="Hml-vK-38x"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SofiaProSemiBold" family="Sofia Pro" pointSize="15"/>
+                                        <color key="textColor" red="0.31372549020000001" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFI-iE-rjC">
+                                        <rect key="frame" x="0.0" y="35" width="382" height="53"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="All itineraries that you saved will appear here, please check out the amazing itineraries created by our Voli XD members!">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name="SofiaProLight"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Eie-Hn-GME" firstAttribute="bottom" secondItem="SgC-Yj-xoG" secondAttribute="bottom" constant="-30" id="2Zn-AW-cIc"/>
+                            <constraint firstItem="SgC-Yj-xoG" firstAttribute="top" secondItem="Eie-Hn-GME" secondAttribute="top" id="Epj-GD-Zgw"/>
+                            <constraint firstAttribute="trailing" secondItem="KF5-oI-J6d" secondAttribute="trailing" constant="16" id="G3I-Zx-PVS"/>
+                            <constraint firstItem="KF5-oI-J6d" firstAttribute="leading" secondItem="Eie-Hn-GME" secondAttribute="leading" constant="16" id="Yh3-xT-Mkx"/>
+                            <constraint firstItem="KF5-oI-J6d" firstAttribute="top" secondItem="Eie-Hn-GME" secondAttribute="top" constant="71" id="oAd-K7-JyM"/>
+                            <constraint firstItem="SgC-Yj-xoG" firstAttribute="leading" secondItem="Eie-Hn-GME" secondAttribute="leading" id="s2q-Ec-vhe"/>
+                            <constraint firstItem="Eie-Hn-GME" firstAttribute="trailing" secondItem="SgC-Yj-xoG" secondAttribute="trailing" id="sDu-FJ-leh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Eie-Hn-GME"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="I8s-Bz-ta8"/>
+                    <connections>
+                        <outlet property="noItemMessageLabel" destination="EFI-iE-rjC" id="EVt-sa-hkP"/>
+                        <outlet property="noItemTitleLabel" destination="ErG-I5-5lv" id="BKb-8O-QHM"/>
+                        <outlet property="tableView" destination="SgC-Yj-xoG" id="72A-gO-dCu"/>
+                        <segue destination="O4t-0f-nlq" kind="show" identifier="DetailSegue" id="8pv-l5-vbu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1nR-xs-gKd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="-117.1875"/>
+        </scene>
+        <!--Saved Collection Detail View Controller-->
+        <scene sceneID="8rx-n7-djS">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="O4t-0f-nlq" customClass="SavedCollectionDetailViewController" customModule="PineApple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RnI-6P-EDw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIY-VG-7ac">
+                                <rect key="frame" x="0.0" y="88" width="414" height="804"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="hYn-QG-stM">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="4nP-6E-k5X">
+                                            <rect key="frame" x="16" y="25" width="382" height="22"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved collections" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvP-Ts-HLx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="144" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="IQi-Df-gsh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="SofiaProSemiBold" family="Sofia Pro" pointSize="18"/>
+                                                    <color key="textColor" red="0.31372549020000001" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="SXg-Ih-2aS"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="4nP-6E-k5X" secondAttribute="trailing" constant="16" id="7Fu-VS-BxR"/>
+                                        <constraint firstItem="4nP-6E-k5X" firstAttribute="leading" secondItem="hYn-QG-stM" secondAttribute="leading" constant="16" id="Fqz-ai-s5M"/>
+                                        <constraint firstItem="4nP-6E-k5X" firstAttribute="top" secondItem="hYn-QG-stM" secondAttribute="top" constant="25" id="SNa-6A-7v2"/>
+                                        <constraint firstAttribute="bottom" secondItem="4nP-6E-k5X" secondAttribute="bottom" constant="16" id="iIO-fk-j1t"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kIY-VG-7ac" firstAttribute="leading" secondItem="rLn-Wk-nvO" secondAttribute="leading" id="LIa-2e-f2b"/>
+                            <constraint firstItem="rLn-Wk-nvO" firstAttribute="trailing" secondItem="kIY-VG-7ac" secondAttribute="trailing" id="QmI-0W-wiT"/>
+                            <constraint firstItem="rLn-Wk-nvO" firstAttribute="bottom" secondItem="kIY-VG-7ac" secondAttribute="bottom" constant="-30" id="Vlv-Xc-PdS"/>
+                            <constraint firstItem="kIY-VG-7ac" firstAttribute="top" secondItem="rLn-Wk-nvO" secondAttribute="top" id="ohs-eJ-Rhj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rLn-Wk-nvO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g2a-dj-8WZ"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="uvP-Ts-HLx" id="ydv-TR-Xdw"/>
+                        <outlet property="tableView" destination="kIY-VG-7ac" id="gNY-gd-Iyt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ASE-J5-72E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="-117"/>
+        </scene>
+    </scenes>
+</document>

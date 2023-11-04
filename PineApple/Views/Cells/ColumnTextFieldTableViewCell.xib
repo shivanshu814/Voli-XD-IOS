@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SofiaProBold.ttf">
+            <string>SofiaProBold</string>
+        </array>
+        <array key="SofiaProLight.ttf">
+            <string>SofiaProLight</string>
+        </array>
+        <array key="SofiaProRegular.ttf">
+            <string>SofiaProRegular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ColumnTextFieldTableViewCell" rowHeight="175" id="h2U-S3-V0B" customClass="ColumnTextFieldTableViewCell" customModule="PineApple" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h2U-S3-V0B" id="TrK-01-jaO">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="w7p-0w-bc4">
+                        <rect key="frame" x="16" y="0.0" width="288" height="175"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrU-hO-83n">
+                                <rect key="frame" x="0.0" y="0.0" width="136" height="175"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZD-9v-Za3">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="xGs-V4-dLD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SofiaProBold" family="Sofia Pro" pointSize="11"/>
+                                        <color key="textColor" red="0.56078431370000004" green="0.56078431370000004" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="qRd-AJ-911">
+                                        <rect key="frame" x="0.0" y="23" width="136" height="128"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B5M-Go-Tik">
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="48"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d2N-AK-1HS">
+                                                        <rect key="frame" x="8" y="6" width="120" height="48"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="48" id="AMn-Wm-TD4"/>
+                                                        </constraints>
+                                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textView>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nUR-Q0-9lx">
+                                                        <rect key="frame" x="8" y="0.0" width="120" height="48"/>
+                                                        <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your day about?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjB-Rd-sqI">
+                                                        <rect key="frame" x="13" y="14.5" width="110" height="19"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="19" id="Nsn-VJ-GNo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="15"/>
+                                                        <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="cjB-Rd-sqI" secondAttribute="trailing" constant="13" id="1fd-SN-Twt"/>
+                                                    <constraint firstItem="cjB-Rd-sqI" firstAttribute="centerY" secondItem="B5M-Go-Tik" secondAttribute="centerY" id="5uo-un-MlK"/>
+                                                    <constraint firstAttribute="bottom" secondItem="nUR-Q0-9lx" secondAttribute="bottom" id="7LW-oc-Hq4"/>
+                                                    <constraint firstItem="d2N-AK-1HS" firstAttribute="leading" secondItem="B5M-Go-Tik" secondAttribute="leading" constant="8" id="Fey-nL-sSR"/>
+                                                    <constraint firstItem="cjB-Rd-sqI" firstAttribute="leading" secondItem="B5M-Go-Tik" secondAttribute="leading" constant="13" id="RtW-P7-8Gk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="nUR-Q0-9lx" secondAttribute="trailing" constant="8" id="Tij-6v-DtB"/>
+                                                    <constraint firstAttribute="height" constant="48" id="YtS-vn-exh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="d2N-AK-1HS" secondAttribute="trailing" constant="8" id="aCn-35-90w"/>
+                                                    <constraint firstItem="nUR-Q0-9lx" firstAttribute="leading" secondItem="B5M-Go-Tik" secondAttribute="leading" constant="8" id="nmx-n1-Uuy"/>
+                                                    <constraint firstItem="d2N-AK-1HS" firstAttribute="top" secondItem="B5M-Go-Tik" secondAttribute="top" constant="6" id="tMq-2B-0Z4"/>
+                                                    <constraint firstItem="nUR-Q0-9lx" firstAttribute="top" secondItem="B5M-Go-Tik" secondAttribute="top" id="uPy-cI-JAy"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2st-6u-0hQ">
+                                                <rect key="frame" x="0.0" y="50" width="136" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="SofiaProBold" family="Sofia Pro" pointSize="11"/>
+                                                <color key="textColor" red="1" green="0.2274509804" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wJC-mt-H19">
+                                                <rect key="frame" x="0.0" y="52" width="136" height="76"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5O-Os-Kuq">
+                                        <rect key="frame" x="0.0" y="23" width="136" height="48"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <state key="normal" image="downArrow"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="EZD-9v-Za3" firstAttribute="top" secondItem="yrU-hO-83n" secondAttribute="top" id="4Sr-o4-MvJ"/>
+                                    <constraint firstItem="qRd-AJ-911" firstAttribute="leading" secondItem="yrU-hO-83n" secondAttribute="leading" id="F6Z-Vw-ehf"/>
+                                    <constraint firstItem="EZD-9v-Za3" firstAttribute="leading" secondItem="yrU-hO-83n" secondAttribute="leading" id="SUU-mn-wKf"/>
+                                    <constraint firstAttribute="trailing" secondItem="qRd-AJ-911" secondAttribute="trailing" id="X7S-RG-My9"/>
+                                    <constraint firstAttribute="bottom" secondItem="qRd-AJ-911" secondAttribute="bottom" constant="24" id="Zdh-pp-Sy7"/>
+                                    <constraint firstItem="Q5O-Os-Kuq" firstAttribute="width" secondItem="B5M-Go-Tik" secondAttribute="width" id="eGT-CB-RZb"/>
+                                    <constraint firstItem="qRd-AJ-911" firstAttribute="top" secondItem="EZD-9v-Za3" secondAttribute="bottom" constant="8" id="iMV-6y-vbI"/>
+                                    <constraint firstItem="Q5O-Os-Kuq" firstAttribute="top" secondItem="B5M-Go-Tik" secondAttribute="top" id="ieY-tS-eaE"/>
+                                    <constraint firstItem="Q5O-Os-Kuq" firstAttribute="leading" secondItem="B5M-Go-Tik" secondAttribute="leading" id="m57-8X-xZe"/>
+                                    <constraint firstItem="Q5O-Os-Kuq" firstAttribute="height" secondItem="B5M-Go-Tik" secondAttribute="height" id="pMd-KC-4Q1"/>
+                                    <constraint firstAttribute="trailing" secondItem="EZD-9v-Za3" secondAttribute="trailing" id="vGc-z5-XKY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cz4-0X-bbT">
+                                <rect key="frame" x="152" y="0.0" width="136" height="175"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lue-mv-v2e">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="Kbl-eB-cEx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SofiaProBold" family="Sofia Pro" pointSize="11"/>
+                                        <color key="textColor" red="0.56078431370000004" green="0.56078431370000004" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="AJV-tZ-mfM">
+                                        <rect key="frame" x="0.0" y="23" width="136" height="128"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vgj-Ip-g0z">
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="48"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JDK-xG-o1p">
+                                                        <rect key="frame" x="8" y="6" width="120" height="48"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="48" id="xhG-Iv-gT9"/>
+                                                        </constraints>
+                                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textView>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kGY-oV-Yy1">
+                                                        <rect key="frame" x="8" y="0.0" width="120" height="48"/>
+                                                        <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your day about?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZn-Bc-OIK">
+                                                        <rect key="frame" x="13" y="14.5" width="110" height="19"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="19" id="1Jn-1d-1ew"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="15"/>
+                                                        <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="IZn-Bc-OIK" secondAttribute="trailing" constant="13" id="67X-6u-BSV"/>
+                                                    <constraint firstItem="kGY-oV-Yy1" firstAttribute="leading" secondItem="Vgj-Ip-g0z" secondAttribute="leading" constant="8" id="Al6-hV-nEd"/>
+                                                    <constraint firstItem="IZn-Bc-OIK" firstAttribute="leading" secondItem="Vgj-Ip-g0z" secondAttribute="leading" constant="13" id="Awf-Sh-vYc"/>
+                                                    <constraint firstAttribute="bottom" secondItem="kGY-oV-Yy1" secondAttribute="bottom" id="J5T-zv-Lbt"/>
+                                                    <constraint firstAttribute="trailing" secondItem="kGY-oV-Yy1" secondAttribute="trailing" constant="8" id="JMG-bI-wJr"/>
+                                                    <constraint firstItem="JDK-xG-o1p" firstAttribute="leading" secondItem="Vgj-Ip-g0z" secondAttribute="leading" constant="8" id="Mgn-JG-kVG"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JDK-xG-o1p" secondAttribute="trailing" constant="8" id="QSc-16-jZH"/>
+                                                    <constraint firstItem="IZn-Bc-OIK" firstAttribute="centerY" secondItem="Vgj-Ip-g0z" secondAttribute="centerY" id="dum-rF-6Tx"/>
+                                                    <constraint firstItem="kGY-oV-Yy1" firstAttribute="top" secondItem="Vgj-Ip-g0z" secondAttribute="top" id="luG-GV-Evr"/>
+                                                    <constraint firstAttribute="height" constant="48" id="xXD-qy-Sr6"/>
+                                                    <constraint firstItem="JDK-xG-o1p" firstAttribute="top" secondItem="Vgj-Ip-g0z" secondAttribute="top" constant="6" id="z5d-3w-hCH"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lV8-lO-pMP">
+                                                <rect key="frame" x="0.0" y="50" width="136" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="SofiaProBold" family="Sofia Pro" pointSize="11"/>
+                                                <color key="textColor" red="1" green="0.22745098039215686" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KN4-nI-d2x">
+                                                <rect key="frame" x="0.0" y="52" width="136" height="76"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nme-Vk-U2F">
+                                        <rect key="frame" x="0.0" y="23" width="136" height="48"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <state key="normal" image="downArrow"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="nme-Vk-U2F" firstAttribute="leading" secondItem="Vgj-Ip-g0z" secondAttribute="leading" id="3ad-l2-KhI"/>
+                                    <constraint firstItem="nme-Vk-U2F" firstAttribute="width" secondItem="Vgj-Ip-g0z" secondAttribute="width" id="4hT-gB-lxA"/>
+                                    <constraint firstItem="nme-Vk-U2F" firstAttribute="height" secondItem="Vgj-Ip-g0z" secondAttribute="height" id="BO3-6n-2ia"/>
+                                    <constraint firstItem="lue-mv-v2e" firstAttribute="top" secondItem="Cz4-0X-bbT" secondAttribute="top" id="JRQ-Eg-nCw"/>
+                                    <constraint firstAttribute="trailing" secondItem="lue-mv-v2e" secondAttribute="trailing" id="SXI-Rz-ikZ"/>
+                                    <constraint firstItem="lue-mv-v2e" firstAttribute="leading" secondItem="Cz4-0X-bbT" secondAttribute="leading" id="WEX-tY-qDF"/>
+                                    <constraint firstAttribute="trailing" secondItem="AJV-tZ-mfM" secondAttribute="trailing" id="bvU-rq-zSG"/>
+                                    <constraint firstAttribute="bottom" secondItem="AJV-tZ-mfM" secondAttribute="bottom" constant="24" id="fEc-dd-WHz"/>
+                                    <constraint firstItem="AJV-tZ-mfM" firstAttribute="leading" secondItem="Cz4-0X-bbT" secondAttribute="leading" id="iJU-RO-sQs"/>
+                                    <constraint firstItem="nme-Vk-U2F" firstAttribute="top" secondItem="Vgj-Ip-g0z" secondAttribute="top" id="tMx-j1-X9R"/>
+                                    <constraint firstItem="AJV-tZ-mfM" firstAttribute="top" secondItem="lue-mv-v2e" secondAttribute="bottom" constant="8" id="w8g-R4-8V3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="w7p-0w-bc4" firstAttribute="leading" secondItem="TrK-01-jaO" secondAttribute="leading" constant="16" id="7mg-di-4Oe"/>
+                    <constraint firstAttribute="bottom" secondItem="w7p-0w-bc4" secondAttribute="bottom" id="R4B-cE-RSu"/>
+                    <constraint firstAttribute="trailing" secondItem="w7p-0w-bc4" secondAttribute="trailing" constant="16" id="SCY-MC-0hT"/>
+                    <constraint firstItem="w7p-0w-bc4" firstAttribute="top" secondItem="TrK-01-jaO" secondAttribute="top" id="q2I-VZ-1QI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="1iy-ft-jaL"/>
+            <connections>
+                <outlet property="errorLabel" destination="2st-6u-0hQ" id="JX7-sV-2mo"/>
+                <outlet property="leftBorderView" destination="B5M-Go-Tik" id="XKu-Xr-8ml"/>
+                <outlet property="leftButton" destination="Q5O-Os-Kuq" id="w1Y-8c-ybg"/>
+                <outlet property="leftHeaderLabel" destination="EZD-9v-Za3" id="rKG-Tz-3KR"/>
+                <outlet property="rightBorderView" destination="Vgj-Ip-g0z" id="47f-o3-sKk"/>
+                <outlet property="rightButton" destination="nme-Vk-U2F" id="DXS-UM-iWX"/>
+                <outlet property="rightErrorLabel" destination="lV8-lO-pMP" id="Z8s-uj-Yw8"/>
+                <outlet property="rightHeaderLabel" destination="lue-mv-v2e" id="DM2-qo-1jc"/>
+                <outlet property="rightTextField" destination="kGY-oV-Yy1" id="VPW-Hg-EVp"/>
+                <outlet property="textField" destination="nUR-Q0-9lx" id="MSs-Rs-amG"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="145.72713643178412"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="downArrow" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SofiaProBold.ttf">
+            <string>SofiaProBold</string>
+        </array>
+        <array key="SofiaProSemiBold.ttf">
+            <string>SofiaProSemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SuggestionTableViewCell" rowHeight="304" id="y4U-Th-U96" customClass="SuggestionTableViewCell" customModule="PineApple" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="304"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y4U-Th-U96" id="xut-ww-62k">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="304"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From the same user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUh-Qv-ebP">
+                        <rect key="frame" x="16" y="32" width="134" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="6P1-bK-aHU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SofiaProSemiBold" family="Sofia Pro" pointSize="15"/>
+                        <color key="textColor" red="0.31372549019607843" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMx-4j-9aa">
+                        <rect key="frame" x="309" y="29" width="50" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="01K-f1-z2d"/>
+                            <constraint firstAttribute="height" constant="25" id="z3e-7v-Tiw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SofiaProBold" family="Sofia Pro" pointSize="11"/>
+                        <state key="normal" title="SEE ALL">
+                            <color key="titleColor" red="0.5607843137254902" green="0.5607843137254902" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="STr-aL-iUE">
+                        <rect key="frame" x="0.0" y="59" width="375" height="237"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="237" id="yaE-dB-jke"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="3a6-AV-de0">
+                            <size key="itemSize" width="276" height="237"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                    </collectionView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="STr-aL-iUE" firstAttribute="top" secondItem="RUh-Qv-ebP" secondAttribute="bottom" constant="8" id="Cud-53-e9v"/>
+                    <constraint firstItem="RUh-Qv-ebP" firstAttribute="leading" secondItem="xut-ww-62k" secondAttribute="leading" constant="16" id="ER5-Mb-0VX"/>
+                    <constraint firstAttribute="trailing" secondItem="STr-aL-iUE" secondAttribute="trailing" id="LLv-Mv-Nou"/>
+                    <constraint firstItem="RUh-Qv-ebP" firstAttribute="top" secondItem="xut-ww-62k" secondAttribute="top" constant="32" id="NGz-bL-zkT"/>
+                    <constraint firstItem="STr-aL-iUE" firstAttribute="leading" secondItem="xut-ww-62k" secondAttribute="leading" id="T1G-LI-gzO"/>
+                    <constraint firstAttribute="trailing" secondItem="BMx-4j-9aa" secondAttribute="trailing" constant="16" id="grh-4o-cXy"/>
+                    <constraint firstAttribute="bottom" secondItem="STr-aL-iUE" secondAttribute="bottom" id="my9-RX-Z9V"/>
+                    <constraint firstItem="BMx-4j-9aa" firstAttribute="centerY" secondItem="RUh-Qv-ebP" secondAttribute="centerY" id="vHz-CI-r1r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="collectionView" destination="STr-aL-iUE" id="gGL-Os-ycV"/>
+                <outlet property="seeAllButton" destination="BMx-4j-9aa" id="0dx-AM-Ke0"/>
+                <outlet property="titleLabel" destination="RUh-Qv-ebP" id="25S-nf-YXq"/>
+                <outlet property="titleLabelHeight" destination="NGz-bL-zkT" id="z7R-lo-0tc"/>
+            </connections>
+            <point key="canvasLocation" x="808" y="108"/>
+        </tableViewCell>
+    </objects>
+</document>

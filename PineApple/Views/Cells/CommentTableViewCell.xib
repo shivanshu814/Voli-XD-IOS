@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SofiaProBold.ttf">
+            <string>SofiaProBold</string>
+        </array>
+        <array key="SofiaProLight.ttf">
+            <string>SofiaProLight</string>
+        </array>
+        <array key="SofiaProSemiBold.ttf">
+            <string>SofiaProSemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="fry-RR-Rc9" customClass="CommentTableViewCell" customModule="PineApple" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fry-RR-Rc9" id="Yxo-eO-vaJ">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="OD2-XX-7ln">
+                        <rect key="frame" x="66" y="10" width="271" height="66.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHg-t3-xrp">
+                                <rect key="frame" x="0.0" y="0.0" width="46" height="18"/>
+                                <fontDescription key="fontDescription" name="SofiaProSemiBold" family="Sofia Pro" pointSize="18"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OLO-Xs-wcV">
+                                <rect key="frame" x="0.0" y="34" width="37.5" height="32.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeU-2c-8j0">
+                                        <rect key="frame" x="0.0" y="0.0" width="37.5" height="15"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Label">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.31372549019607843" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name="SofiaProLight"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA6-TP-6e0">
+                                        <rect key="frame" x="0.0" y="23" width="37.5" height="9.5"/>
+                                        <fontDescription key="fontDescription" name="SofiaProBold" family="Sofia Pro" pointSize="11"/>
+                                        <color key="textColor" red="0.5607843137254902" green="0.5607843137254902" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="m46-eq-09d">
+                        <rect key="frame" x="58" y="82.5" width="97" height="40"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjg-Aj-S91">
+                                <rect key="frame" x="0.0" y="0.0" width="43" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zir-no-HTl">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ccL-dv-Rid"/>
+                                            <constraint firstAttribute="width" constant="36" id="pdK-V4-1hz"/>
+                                        </constraints>
+                                        <state key="normal" image="icon-like"/>
+                                        <state key="selected" image="icon-liked"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0Z-0e-pVc">
+                                        <rect key="frame" x="36" y="0.0" width="7" height="40"/>
+                                        <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="11"/>
+                                        <color key="textColor" red="0.56078431370000004" green="0.56078431370000004" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bEO-ww-Nd9">
+                                <rect key="frame" x="61" y="0.0" width="36" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbd-8X-1kj">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="4S6-xk-kUY"/>
+                                            <constraint firstAttribute="height" constant="40" id="oxY-3c-9iV"/>
+                                        </constraints>
+                                        <state key="normal" image="icon-comment"/>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fW-6o-M6u">
+                                        <rect key="frame" x="36" y="0.0" width="0.0" height="40"/>
+                                        <fontDescription key="fontDescription" name="SofiaProBold" family="Sofia Pro" pointSize="11"/>
+                                        <color key="textColor" red="0.31372549020000001" green="0.21176470589999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="fji-m2-FaG"/>
+                        </constraints>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVx-DO-RaS">
+                        <rect key="frame" x="18" y="10" width="40" height="40"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="F8d-nC-gmD"/>
+                            <constraint firstAttribute="height" constant="40" id="s2W-F8-Tda"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OD2-XX-7ln" firstAttribute="leading" secondItem="XVx-DO-RaS" secondAttribute="trailing" constant="8" id="2Rw-Dm-5s9"/>
+                    <constraint firstItem="XVx-DO-RaS" firstAttribute="top" secondItem="Yxo-eO-vaJ" secondAttribute="top" constant="10" id="7MC-EY-hCk"/>
+                    <constraint firstItem="m46-eq-09d" firstAttribute="top" secondItem="OD2-XX-7ln" secondAttribute="bottom" constant="6" id="BFL-7t-D2j"/>
+                    <constraint firstItem="m46-eq-09d" firstAttribute="leading" secondItem="OD2-XX-7ln" secondAttribute="leading" constant="-8" id="PLq-ky-vf1"/>
+                    <constraint firstItem="OD2-XX-7ln" firstAttribute="top" secondItem="XVx-DO-RaS" secondAttribute="top" id="YSi-Qn-rR0"/>
+                    <constraint firstAttribute="trailing" secondItem="OD2-XX-7ln" secondAttribute="trailing" constant="38" id="l0F-aU-R6o"/>
+                    <constraint firstItem="XVx-DO-RaS" firstAttribute="leading" secondItem="Yxo-eO-vaJ" secondAttribute="leading" constant="18" id="mbq-oy-XfC"/>
+                    <constraint firstAttribute="bottom" secondItem="m46-eq-09d" secondAttribute="bottom" constant="7.5" id="tb2-9v-cf4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="comment" destination="gbd-8X-1kj" id="DgJ-Zc-QYy"/>
+                <outlet property="dateLabel" destination="hA6-TP-6e0" id="yvl-sT-TBS"/>
+                <outlet property="likeButton" destination="zir-no-HTl" id="ZwL-d6-9Zg"/>
+                <outlet property="likeCountLabel" destination="a0Z-0e-pVc" id="ISc-xQ-tvH"/>
+                <outlet property="messageLabel" destination="AeU-2c-8j0" id="N9s-5X-uqN"/>
+                <outlet property="nameLabel" destination="VHg-t3-xrp" id="Anc-fW-sdS"/>
+                <outlet property="profileButton" destination="XVx-DO-RaS" id="M5q-Zb-B2N"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="140"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-comment" width="20" height="20"/>
+        <image name="icon-like" width="24" height="21"/>
+        <image name="icon-liked" width="23" height="21"/>
+    </resources>
+</document>

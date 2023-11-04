@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SofiaProLight.ttf">
+            <string>SofiaProLight</string>
+        </array>
+        <array key="SofiaProSemiBold.ttf">
+            <string>SofiaProSemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TagHeaderCollectionReusableView" id="f1o-vh-eZY" customClass="TagHeaderCollectionReusableView" customModule="PineApple" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6UE-4W-nzr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKu-Hh-abi">
+                            <rect key="frame" x="16" y="73" width="309" height="1"/>
+                            <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="DJo-iO-AZ1"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCf-dD-9Ut">
+                            <rect key="frame" x="317" y="22.5" width="42" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="42" id="rLn-lA-0gp"/>
+                                <constraint firstAttribute="height" constant="64" id="wxo-ud-3Zb"/>
+                            </constraints>
+                            <state key="normal" image="icon-sort"/>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Y7E-cj-3P6">
+                            <rect key="frame" x="16" y="20" width="293" height="45"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities about:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXB-WD-vq9">
+                                    <rect key="frame" x="0.0" y="0.0" width="293" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="15" id="Uk2-Xi-Zc5"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="13"/>
+                                    <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zsE-4s-4KK">
+                                    <rect key="frame" x="0.0" y="23" width="293" height="22"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sydney, Australia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoc-Kx-BtW">
+                                            <rect key="frame" x="0.0" y="0.0" width="293" height="22"/>
+                                            <fontDescription key="fontDescription" name="SofiaProSemiBold" family="Sofia Pro" pointSize="18"/>
+                                            <color key="textColor" red="0.31456595659999997" green="0.30966156719999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="3RJ-Xs-k8r"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="4I0-tb-R4q"/>
+                        <constraint firstItem="Y7E-cj-3P6" firstAttribute="top" secondItem="6UE-4W-nzr" secondAttribute="top" constant="20" id="6Ef-Jk-e3L"/>
+                        <constraint firstItem="jKu-Hh-abi" firstAttribute="leading" secondItem="Y7E-cj-3P6" secondAttribute="leading" id="GEX-8F-Wcz"/>
+                        <constraint firstItem="oCf-dD-9Ut" firstAttribute="centerY" secondItem="Y7E-cj-3P6" secondAttribute="centerY" constant="12" id="J4j-7p-mas"/>
+                        <constraint firstItem="jKu-Hh-abi" firstAttribute="top" secondItem="Y7E-cj-3P6" secondAttribute="bottom" constant="8" id="Pkt-ZI-O5V"/>
+                        <constraint firstItem="jKu-Hh-abi" firstAttribute="leading" secondItem="6UE-4W-nzr" secondAttribute="leading" constant="16" id="RH4-i3-tgb"/>
+                        <constraint firstAttribute="bottom" secondItem="jKu-Hh-abi" secondAttribute="bottom" constant="16" id="c02-PM-d37"/>
+                        <constraint firstItem="oCf-dD-9Ut" firstAttribute="leading" secondItem="jKu-Hh-abi" secondAttribute="trailing" constant="-8" id="ehW-Cz-ohe"/>
+                        <constraint firstAttribute="bottom" secondItem="jKu-Hh-abi" secondAttribute="bottom" constant="16" id="g4Q-R4-bsT"/>
+                        <constraint firstItem="oCf-dD-9Ut" firstAttribute="leading" secondItem="Y7E-cj-3P6" secondAttribute="trailing" constant="8" id="ptL-O3-4jM"/>
+                        <constraint firstItem="Y7E-cj-3P6" firstAttribute="leading" secondItem="6UE-4W-nzr" secondAttribute="leading" constant="16" id="vsm-v3-TJy"/>
+                        <constraint firstAttribute="trailing" secondItem="oCf-dD-9Ut" secondAttribute="trailing" constant="16" id="xxQ-YX-AAH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="6UE-4W-nzr" firstAttribute="trailing" secondItem="9No-6T-MR2" secondAttribute="trailing" id="6Rr-F9-1Sz"/>
+                <constraint firstItem="6UE-4W-nzr" firstAttribute="leading" secondItem="9No-6T-MR2" secondAttribute="leading" id="AIU-vA-dO9"/>
+                <constraint firstItem="9No-6T-MR2" firstAttribute="bottom" secondItem="6UE-4W-nzr" secondAttribute="bottom" id="V6f-pT-v7j"/>
+                <constraint firstItem="6UE-4W-nzr" firstAttribute="top" secondItem="f1o-vh-eZY" secondAttribute="top" id="abI-Lx-S9e"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9No-6T-MR2"/>
+            <connections>
+                <outlet property="sortButton" destination="oCf-dD-9Ut" id="pqZ-Uu-ckk"/>
+                <outlet property="tagLabel" destination="uoc-Kx-BtW" id="0fI-eB-eWs"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="154"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="icon-sort" width="18" height="12"/>
+    </resources>
+</document>

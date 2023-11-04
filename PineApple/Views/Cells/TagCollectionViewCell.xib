@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SofiaProRegular.ttf">
+            <string>SofiaProRegular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TagCollectionViewCell" id="gTV-IL-0wX" customClass="TagCollectionViewCell" customModule="PineApple" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="74" height="20"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="74" height="20"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCy-me-dfP">
+                        <rect key="frame" x="16" y="0.0" width="42" height="20"/>
+                        <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.31372549020000001" green="0.21176470589999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uCy-me-dfP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="0qE-lW-HPr"/>
+                <constraint firstAttribute="bottom" secondItem="uCy-me-dfP" secondAttribute="bottom" id="2oO-rI-ngT"/>
+                <constraint firstAttribute="bottom" secondItem="uCy-me-dfP" secondAttribute="bottom" id="3Bq-5F-ig1"/>
+                <constraint firstAttribute="trailing" secondItem="uCy-me-dfP" secondAttribute="trailing" constant="16" id="DOv-JR-hD8"/>
+                <constraint firstItem="uCy-me-dfP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DoW-6V-HVd"/>
+                <constraint firstItem="uCy-me-dfP" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" constant="7" id="GQr-UQ-zyn"/>
+                <constraint firstItem="uCy-me-dfP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="7" id="Lvy-x7-VGN"/>
+                <constraint firstItem="uCy-me-dfP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mth-mp-Q5E"/>
+                <constraint firstAttribute="trailing" secondItem="uCy-me-dfP" secondAttribute="trailing" constant="7" id="vUq-J7-v8Z"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2oO-rI-ngT"/>
+                    <exclude reference="GQr-UQ-zyn"/>
+                    <exclude reference="Lvy-x7-VGN"/>
+                    <exclude reference="mth-mp-Q5E"/>
+                    <exclude reference="vUq-J7-v8Z"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="tagLabel" destination="uCy-me-dfP" id="BK1-P3-eOA"/>
+                <outlet property="tagLabelLeading" destination="0qE-lW-HPr" id="0HF-gj-w3b"/>
+                <outlet property="tagLabelTrailing" destination="DOv-JR-hD8" id="Jbf-DH-i1F"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="146"/>
+        </collectionViewCell>
+    </objects>
+</document>
