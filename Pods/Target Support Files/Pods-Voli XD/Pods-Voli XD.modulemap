@@ -1,0 +1,6 @@
+framework module Pods_Voli_XD {
+  umbrella header "Pods-Voli XD-umbrella.h"
+
+  export *
+  module * { export * }
+}
